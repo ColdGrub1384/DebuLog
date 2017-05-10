@@ -1,7 +1,7 @@
 # DebuLog
 
 ![](https://img.shields.io/badge/Language-Swift-orange.svg?style=flat-square) 
-![](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)
+![](https://img.shields.io/badge/License-Apache-green.svg?style=flat-square)
 
 DebuLog is a Framework thats allow to print and write to an output file at the same time
 
