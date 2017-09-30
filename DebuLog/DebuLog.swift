@@ -9,14 +9,14 @@
 import Foundation
 
 open class DebuLog {
-     public var file: URL?
+     open var file: URL?
     
-     public enum errors: Error {
+    public enum errors: Error {
         case errorWritingFile
         case errorWritingToFile
     }
     
-    public func close() {
+    open func close() {
         do {try FileManager.default.removeItem(at: file!)} catch _ {}
     }
     
@@ -24,7 +24,7 @@ open class DebuLog {
         print("DebuLog instantiated!")
     }
     
-    public func debug (_ thing:Any..., terminator:String) throws {
+    open func debug (_ thing:Any..., terminator:String) throws {
         print(thing, terminator: terminator)
         
         if file != nil {
@@ -47,7 +47,7 @@ open class DebuLog {
         }
     }
     
-     public func debug (_ thing:Any) throws {
+     open func debug (_ thing:Any) throws {
         print(thing)
         
         if file != nil {
@@ -72,7 +72,7 @@ open class DebuLog {
     }
     
     
-    public func debug_ (_ thing:Any..., terminator:String) {
+    open func debug_ (_ thing:Any..., terminator:String) {
         print(thing, terminator: terminator)
         
         if file != nil {
@@ -90,7 +90,7 @@ open class DebuLog {
         }
     }
     
-    public func debug_ (_ thing:Any) {
+    open func debug_ (_ thing:Any) {
         print(thing)
         
         if file != nil {
