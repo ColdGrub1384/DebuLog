@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class DebuLog {
+open class DebuLog {
      public var file: URL?
     
      public enum errors: Error {
