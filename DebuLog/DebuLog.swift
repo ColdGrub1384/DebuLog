@@ -9,8 +9,18 @@
 import Foundation
 
 open class DebuLog {
-     open var file: URL?
+    open var file: URL? {
+        get {
+            return file_
+        }
+        
+        set {
+            file_ = newValue
+        }
+    }
     
+    private var file_ = URL(string:"")
+        
     public enum errors: Error {
         case errorWritingFile
         case errorWritingToFile
